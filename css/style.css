@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+#cover-image::before {
+  content: "";
+  background-image: url("../images/Ellipse 529.png");
+  position: absolute;
+  height: 186.73px;
+  z-index: -1;
+  left: -86.73px;
+  top: -79.22px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+#cover-image {
+  background-image: url("../images/Group 368.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  width: auto;
+  position: relative;
+}
+#cover-image .navbar-nav {
+  margin-left: auto;
+}
+#cover-image .text-container {
+  width: 40%;
+  margin-top: 10rem;
+}
+
+/*# sourceMappingURL=style.css.map */
