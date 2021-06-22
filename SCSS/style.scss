@@ -12,7 +12,7 @@ html {
 // cover-image
 #cover-image::before {
   content: '';
-  background-image: url('../images/Ellipse\ 529.png');
+  background-image: url('../images/Group\ 216.png');
   position: absolute;
   height: 186.73px;
   z-index: -1;
@@ -22,7 +22,7 @@ html {
   background-repeat: no-repeat;
 }
 #cover-image {
-  background-image: url('../images/Group\ 368.png');
+  background-image: url('../images/Group\ 369.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 40rem;
@@ -35,4 +35,30 @@ html {
     width: 40%;
     margin-top: 10rem;
   }
+}
+// choose-us
+#choose-us {
+  .img-container img {
+    height: 44.438rem;
+  }
+}
+// how-works
+#how-works {
+  background-image: url('../images/Group\ 364.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+// shop-now
+#shop-now {
+  background-image: url('../images/Group\ 366@2x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  width: 50rem;
+}
+// our-gallery
+#our-gallery {
+  background-image: url('../images/Group\ 367.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
