@@ -7,17 +7,67 @@
           box-sizing: inherit;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+#cover-image .navbar-nav .btn-white, #cover-image .text-container .btn, #how-works .container .easy-begin .btn, #shop-now .btn, #newsletter .newsletter-text .input-group .btn {
+  padding: 0.625rem 2.25rem;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #ff7000;
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+
+.headline {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #ff7000;
+}
+
+.black-headline {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #222754;
+}
+
+.text, #choose-us .d-flex div p, #contact-us .black-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #222754;
+}
+
+.blue-text, #choose-us .d-flex div h4 {
+  font-size: 1.5rem;
+  color: #3c73f1;
+}
+
+.blue-text, #choose-us .d-flex div h4, #shop-now p, #newsletter .watch-video .play-video {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
 #cover-image::before {
   content: '';
-  background-image: url("../images/Group 216.png");
+  background-image: url("../images/Ellipse 529.png");
   position: absolute;
   height: 186.73px;
-  z-index: -1;
+  z-index: 1;
   left: -86.73px;
   top: -79.22px;
   width: 100%;
@@ -25,10 +75,10 @@ html {
 }
 
 #cover-image {
-  background-image: url("../images/Group 369.png");
+  background-image: url("../images/Group 368.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 40rem;
+  background-size: contain;
+  height: 59.375rem;
   width: auto;
   position: relative;
 }
@@ -37,19 +87,157 @@ html {
   margin-left: auto;
 }
 
+#cover-image .navbar-nav .nav-item .nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+#cover-image .navbar-nav .btn-white {
+  margin-left: 1.5rem;
+}
+
 #cover-image .text-container {
   width: 40%;
   margin-top: 10rem;
 }
 
+#cover-image .text-container h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 4.5rem;
+  color: #222754;
+}
+
+#cover-image .text-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #7a7d98;
+  margin: 1.875rem auto;
+}
+
+#cover-image .text-container .btn {
+  background-color: #ff7000;
+  color: #ffffff;
+}
+
+#choose-us {
+  margin-bottom: 8rem;
+}
+
 #choose-us .img-container img {
-  height: 44.438rem;
+  height: auto;
+}
+
+#choose-us .d-flex div {
+  border-left: 3px solid #ff7000;
+  margin-top: 1rem;
+}
+
+#choose-us .d-flex div h4 {
+  margin-left: 1.5rem;
+}
+
+#choose-us .d-flex div p {
+  margin-left: 1.5rem;
 }
 
 #how-works {
-  background-image: url("../images/Group 364.png");
+  overflow: hidden;
+}
+
+#how-works .container {
+  background-image: url("../images/Group 364@2x.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  width: 100%;
+  position: relative;
+}
+
+#how-works .container .easy-begin {
+  margin-top: 15rem;
+}
+
+#how-works .container .easy-begin .btn {
+  margin-top: 2.5rem;
+  background-color: #ff7000;
+  color: #ffffff;
+}
+
+#how-works .container .d-flex .flex-column {
+  margin-top: 5rem;
+}
+
+#how-works .container .white-div,
+#how-works .container .purchase-div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+#how-works .container .purchase-div {
+  margin-top: 15rem;
+}
+
+#how-works .container .configure {
+  -webkit-box-shadow: 0 10px 10px 0px #c0c3c788;
+          box-shadow: 0 10px 10px 0px #c0c3c788;
+}
+
+#how-works .container a {
+  text-decoration: none;
+  color: #ff7000;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+#how-works .container .text {
+  margin-bottom: 2.25rem;
+}
+
+#how-works .container::after {
+  content: '';
+  background-image: url("../images/Path 292@2x.png");
+  position: absolute;
+  height: 650px;
+  z-index: -1;
+  width: 100%;
+  background-position-x: calc(100% - 3px);
+  background-position-y: calc(100% - 0.5rem);
+  background-repeat: no-repeat;
+  bottom: -216px;
+  right: -263px;
+}
+
+#smart-lock {
+  margin-top: 14rem;
+  margin-bottom: 8rem;
+}
+
+#smart-lock .container {
+  margin-top: 5rem;
+}
+
+#smart-lock .container .img-left {
+  margin-right: -2.5rem;
+}
+
+#smart-lock .container .text-left {
+  margin-bottom: 1.5rem;
+}
+
+#smart-lock .container .img-right {
+  margin-left: -2.5rem;
+}
+
+#smart-lock .container .text-right {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 #shop-now {
@@ -57,12 +245,176 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
-  width: 50rem;
+  width: 70%;
+}
+
+#shop-now .row {
+  padding: 4.375rem 1rem;
+}
+
+#shop-now p {
+  font-size: 2rem;
+  color: #ffffff;
 }
 
 #our-gallery {
+  margin: 8rem auto;
+}
+
+#our-gallery .container {
   background-image: url("../images/Group 367.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+}
+
+#our-gallery .container .text-center {
+  padding-top: 2.25rem;
+}
+
+#our-gallery .container .images {
+  padding: 3rem;
+}
+
+#ask-question .text {
+  margin-bottom: 3rem;
+}
+
+#ask-question .question-div {
+  margin-top: 2rem;
+  background-color: #f5f5f5;
+  padding: 1.25rem;
+  border-left: 3px solid #ff7000;
+}
+
+#ask-question .question-div a {
+  text-decoration: none;
+  color: black;
+}
+
+#ask-question .question-div a .fa-caret-down {
+  float: right;
+  margin-right: 2rem;
+}
+
+#ask-question .question-div a:focus {
+  color: #3c73f1;
+}
+
+#ask-question .col-md-6 img {
+  margin: 3rem auto;
+}
+
+#newsletter {
+  margin: 5rem auto;
+  background-image: url("../images/Group 354@2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 45rem;
+}
+
+#newsletter .newsletter-text {
+  margin: auto;
+  width: 50%;
+}
+
+#newsletter .newsletter-text h2 {
+  padding-top: 3rem;
+}
+
+#newsletter .newsletter-text p {
+  width: 26rem;
+  margin: auto;
+}
+
+#newsletter .newsletter-text .input-group {
+  width: 24rem;
+  margin: 2.5rem auto;
+  position: relative;
+}
+
+#newsletter .newsletter-text .input-group .form-control {
+  border-radius: 50px;
+}
+
+#newsletter .newsletter-text .input-group .btn {
+  padding: 0.235rem 2.25rem;
+  background-color: #ff7000;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+}
+
+#newsletter .watch-video {
+  margin: auto;
+  background-image: url("../images/cycle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35rem;
+  height: 28rem;
+}
+
+#newsletter .watch-video .play-video {
+  margin: 5rem auto;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+#newsletter .watch-video .play-video .fas {
+  background-image: radial-gradient(at center, white 40%, transparent 40%);
+}
+
+#newsletter .watch-video .play-video .fa-play-circle {
+  color: #ff7000;
+  font-size: 3rem;
+}
+
+#newsletter .watch-video .video-status .fab {
+  background-image: radial-gradient(at center, white 40%, transparent 40%);
+}
+
+#newsletter .watch-video .video-status .fa-youtube {
+  color: #c5c5c5;
+  font-size: 2.55rem;
+  margin-right: 10px;
+}
+
+#newsletter .watch-video .video-status .paused {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #ff7000;
+}
+
+#newsletter .watch-video .video-status .remaining {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#newsletter .watch-video .video-status .progress {
+  width: 18rem;
+  height: 0.5rem;
+}
+
+#newsletter .watch-video .video-status .progress .progress-bar {
+  background-color: #ff7000;
+}
+
+#contact-us {
+  background-image: url("../images/Mask Group 10@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+#contact-us .black-headline {
+  font-size: 1.55rem;
+}
+
+#contact-us .black-text {
+  color: black;
+  margin: 1rem auto;
 }
 /*# sourceMappingURL=style.css.map */

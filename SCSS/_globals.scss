@@ -1,0 +1,66 @@
+@import 'variables';
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.headline {
+  @extend %headline;
+}
+.black-headline {
+  @extend %black-headline;
+}
+.text {
+  @extend %text;
+}
+.blue-text {
+  @extend %blue-text;
+}
+%btn-shop {
+  padding: 0.625rem 2.25rem;
+  border-radius: 25px;
+  background-color: $White;
+  color: $Safety-Orange;
+  font-size: 1.125rem;
+  font-weight: $medium;
+  font-family: $Roboto;
+}
+%headline {
+  font-weight: $medium;
+  font-family: $Roboto;
+  font-size: 1.5rem;
+  color: $Safety-Orange;
+}
+%black-headline {
+  font-family: $Inter;
+  font-weight: $regular;
+  font-size: 2.5rem;
+  color: $Cloud-Burst;
+}
+%text {
+  font-family: $Roboto;
+  font-weight: $regular;
+  font-size: 1rem;
+  color: $Cloud-Burst;
+}
+%blue-text {
+  @extend %inter-regular;
+  font-size: 1.5rem;
+  color: $Blue;
+}
+%inter-regular {
+  font-family: $Inter;
+  font-weight: $regular;
+}
